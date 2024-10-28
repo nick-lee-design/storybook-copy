@@ -1,0 +1,58 @@
+.tab {
+  align-items: center;
+  border-radius: 4px 4px 0px 0px;
+  display: inline-flex;
+  gap: 10px;
+  height: 45px;
+  justify-content: center;
+  padding: 6px 24px;
+  position: relative;
+}
+
+.tab .chat {
+  font-family: var(--body-bold-font-family);
+  font-size: var(--body-bold-font-size);
+  font-style: var(--body-bold-font-style);
+  font-weight: var(--body-bold-font-weight);
+  letter-spacing: var(--body-bold-letter-spacing);
+  line-height: var(--body-bold-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.tab .chat-icon {
+  height: 32px !important;
+  position: relative !important;
+  width: 32px !important;
+}
+
+.tab.selected {
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-color: var(--greyscale-HX-green);
+}
+
+.tab.dark.hover {
+  background-color: var(--greyscale-primary-700);
+}
+
+.tab.hover.light {
+  background-color: var(--greyscale-primary-100);
+}
+
+.tab.hover .chat {
+  color: var(--greyscale-primary-500);
+}
+
+.tab.unselected .chat {
+  color: var(--greyscale-primary-500);
+}
+
+.tab.dark.selected .chat {
+  color: var(--greyscale-primary-000);
+}
+
+.tab.light.selected .chat {
+  color: var(--greyscale-primary-900);
+}
